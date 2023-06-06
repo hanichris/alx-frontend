@@ -11,6 +11,15 @@ html {
     font-size: 62.5%;
 }
 :root {
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-display: inline-block;
+    --button-font-size: var(--font-size-large);
+    --button-hover-background: var(--color-primary);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-padding: 1.5rem 3rem;
+    --button-text-decoration: none; 
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
@@ -63,6 +72,7 @@ body {
 }
 
 [data-section-theme="dark"] {
+    --button-color: var(--color-white);
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background-color: var(--color-black);
@@ -83,6 +93,21 @@ a:hover {
 
 a:active {
     color: var(--color-light-grey);
+}
+
+.button {
+    border: var(--button-border);
+    color: var(--button-color);
+    display: var(--button-display);
+    font-size: var(--button-font-size);
+    padding: var(--button-padding);
+    text-decoration: var(--button-text-decoration);
+}
+
+.button:hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
 }
 
 .visually-hidden {
