@@ -25,10 +25,16 @@ html {
     --font-size-xx-large: 4.8rem;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
+    --footer-padding: 5rem 0 1rem;
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-align: center;
+    --section-footer-padding: 5rem 0 1rem;
     --section-header-align: center;
+    --section-header-padding: 0 0 3rem;
+    --section-padding: 5rem 0;
     --section-tagline-transform: uppercase;
     --section-title-color: var(--color-black);
     --section-title-margin: 0;
@@ -69,8 +75,22 @@ a:active {
     display: none;
 }
 
+.section {
+    padding: var(--section-padding);
+}
+
 .section-header {
+    padding: var(--section-header-padding);
     text-align: var(--section-header-align);
+}
+
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
 }
 
 .section-title {
@@ -95,4 +115,8 @@ a:active {
 
 .card-category {
     color: var(--color-primary);
+}
+
+.footer {
+    padding: var(--footer-padding);
 }
