@@ -212,3 +212,19 @@ ul.row {
 .footer ul {
     text-align: right;
 }
+
+.card-services > .card-title {
+    margin: 0;
+}
+
+.card-services a {
+    background-color: var(--color-light-grey);
+    display: block;
+    padding: 2rem;
+}
+
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
