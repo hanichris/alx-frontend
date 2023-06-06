@@ -26,6 +26,13 @@ html {
     --font-weight-regular: 400;
     --font-weight-bold: 700;
     --footer-padding: 5rem 0 1rem;
+    --nav-item-display: inline-block;
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-link-hover: var(--color-primary);
+    --nav-item-margin: 0 0 3rem;
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
@@ -35,6 +42,7 @@ html {
     --section-header-align: center;
     --section-header-padding: 0 0 3rem;
     --section-padding: 5rem 0;
+    --section-tagline-margin: 0;
     --section-tagline-transform: uppercase;
     --section-title-color: var(--color-black);
     --section-title-margin: 0;
@@ -105,6 +113,7 @@ a:active {
     color: var(--color-primary);
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
+    margin: var(--section-tagline-margin);
     text-transform: var(--section-tagline-transform);
 }
 
@@ -119,4 +128,34 @@ a:active {
 
 .footer {
     padding: var(--footer-padding);
+}
+
+.navbar-menu {
+    float: right;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Using the child selector to select the `.nav-item` class within the `.nav` class */
+.nav > .nav-item {
+    display: var(--nav-item-display);
+    font-family: var(--nav-item-font-family);
+    font-size: var(--nav-item-font-size);
+    font-weight: var(--nav-item-font-weight);
+    letter-spacing: var(--nav-item-letter-spacing);
+    margin: var(--nav-item-margin);
+}
+
+.nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
 }
