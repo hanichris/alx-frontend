@@ -440,6 +440,18 @@
   .social-link > svg {
     fill: var(--text-color);
   }
+
+  @media (max-width: 767px) {
+    :root {
+      --footer-padding: 5rem 2rem 1rem;
+    }
+    .footer .footer-nav, .footer .social.nav {
+      text-align: center;
+    }
+    .social.nav > li + li, .footer-nav > li + li {
+      padding-left: 2rem;
+    }
+  }
   
   /*** 3. SECTION ***/
   
